@@ -43,12 +43,16 @@ public class HomePage extends base{
 		log.info(text);
 		
 		lp.getLogin().click();
+		System.out.println(text);
+		System.out.println(Username);
+		System.out.println(Password);
 		
 		}
 
 	@AfterTest
 	public void teardown()
 	{
+		
 		
 		driver.close();
 		driver=null;
